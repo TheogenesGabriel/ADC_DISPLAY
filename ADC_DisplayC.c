@@ -98,7 +98,7 @@ void update_leds(uint16_t x_value, uint16_t y_value) {
       // Eixo X (LED Vermelho)
       if(x_value > y_value){
         if (y_value < 1840) {
-          level_blue = /*MAX -*/ (2048 - y_value) * 32; // Movimento para cima
+          level_blue = MAX - (2048 - y_value) * 32; // Movimento para cima
         }
         else if (x_value > 2070) {
           level_red = (x_value - 2048) * 32; // Movimento para a direita
@@ -106,7 +106,7 @@ void update_leds(uint16_t x_value, uint16_t y_value) {
       }else{
         // Eixo Y (LED Azul)
         if (x_value < 1790) {
-          level_red =/* MAX -*/ (2048 - x_value) * 32; // Movimento para a esquerda
+          level_red = MAX - (2048 - x_value) * 32; // Movimento para a esquerda
         }  else if (y_value > 1980) {
           level_blue = (y_value - 2048) * 32; // Movimento para baixo
         }
