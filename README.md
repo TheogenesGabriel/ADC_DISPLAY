@@ -50,7 +50,7 @@ Este projeto utiliza um microcontrolador RP2040 para controlar LEDs RGB e um dis
 - O botão do joystick ativa/desativa o LED verde.
 
 ## Vídeo Demonstrativo
-[Insira aqui o link do vídeo no YouTube]
+[https://www.youtube.com/shorts/mXb2OkFiIRU]
 
 ## Autor
 - **Theógenes Gabriel Araújo de Andrade**
